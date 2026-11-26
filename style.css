@@ -132,6 +132,102 @@ footer {
     #accueil h2 {
         font-size: 30px;
     }
+    
+/* Présentation personnelle */
+
+.surtitre {
+    color: #d4af37;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 15px;
+}
+
+#accueil {
+    min-height: 500px;
+}
+
+#accueil h2 {
+    color: #ffffff;
+    font-size: clamp(32px, 5vw, 65px);
+    margin-bottom: 5px;
+}
+
+#accueil h3 {
+    color: #d4af37;
+    font-size: 22px;
+    margin-bottom: 25px;
+}
+
+#accueil p {
+    max-width: 750px;
+    margin-bottom: 10px;
+}
+
+/* Boutons */
+
+.boutons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn-or,
+.btn-contour {
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px solid #d4af37;
+    transition: 0.3s;
+}
+
+.btn-or {
+    background-color: #d4af37;
+    color: #090909;
+}
+
+.btn-contour {
+    color: #d4af37;
+}
+
+.btn-or:hover {
+    background-color: #f5d76e;
+    box-shadow: 0 0 20px #d4af3755;
+}
+
+.btn-contour:hover {
+    background-color: #d4af37;
+    color: #090909;
+}
+
+/* Animation d'apparition */
+
+#accueil {
+    animation: apparition 1s ease-out;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #accueil {
+        animation: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 
     #accueil p {
         font-size: 16px;
